@@ -58,7 +58,7 @@ commons-collections<=3.2.1存在漏洞
 完整POC地址：[https://github.com/SQYY/Apache-Commons-Collections/blob/master/POC.java](<https://github.com/SQYY/Apache-Commons-Collections/blob/master/POC.java>)
 
 
-## 6.参考链接
+## 7.参考链接
 
 * [https://paper.seebug.org/312/#6-java-apache-commonscollections-rce](https://paper.seebug.org/312/#6-java-apache-commonscollections-rce)
 
