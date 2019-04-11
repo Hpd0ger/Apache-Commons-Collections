@@ -15,7 +15,7 @@ commons-collections<=3.2.1存在漏洞
 
 本文对commons-collections-3.2.1进行漏洞分析，下载地址：[https://github.com/SQYY/Apache-Commons-Collections/raw/master/commons-collections-3.2.1-1.0.0.jar](https://github.com/SQYY/Apache-Commons-Collections/raw/master/commons-collections-3.2.1-1.0.0.jar)
 
-## 4.漏洞分析
+## 5.漏洞分析
 
 在`org/apache/commons/collections/map/TransformedMap.class`中可以看到**decorate()**方法，它是将一个Map对象，转换成TransformedMap对象。
 
@@ -37,7 +37,7 @@ commons-collections<=3.2.1存在漏洞
 
 就是说只需要传入方法名、参数类型和参数，我们就可以通过Java的反射机制可以调用任意函数。
 
-## 5.构造POC
+## 6.构造POC
 
 那么我们重要的是多个Transformer能串联起来，形成ChainedTransformer，让它依次执行便可序列化。
 
@@ -56,6 +56,18 @@ commons-collections<=3.2.1存在漏洞
 ![](https://ws3.sinaimg.cn/large/006tKfTcgy1g0ucamht5uj318i070dha.jpg)
 
 完整POC地址：[https://github.com/SQYY/Apache-Commons-Collections/blob/master/POC.java](<https://github.com/SQYY/Apache-Commons-Collections/blob/master/POC.java>)
+
+
+## 6.参考链接
+
+* [https://paper.seebug.org/312/#6-java-apache-commonscollections-rce](https://paper.seebug.org/312/#6-java-apache-commonscollections-rce)
+
+* [https://xz.aliyun.com/t/136](https://xz.aliyun.com/t/136)
+
+* [http://pirogue.org/2017/12/22/javaSerialKiller/](http://pirogue.org/2017/12/22/javaSerialKiller/)
+
+
+
 
 
 ## 6.参考链接
