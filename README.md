@@ -69,14 +69,3 @@ commons-collections<=3.2.1存在漏洞
 
 
 
-
-## 6.参考链接
-
-* [https://paper.seebug.org/312/#6-java-apache-commonscollections-rce](https://paper.seebug.org/312/#6-java-apache-commonscollections-rce)
-
-* [https://xz.aliyun.com/t/136](https://xz.aliyun.com/t/136)
-
-* [http://pirogue.org/2017/12/22/javaSerialKiller/](http://pirogue.org/2017/12/22/javaSerialKiller/)
-
-
-
